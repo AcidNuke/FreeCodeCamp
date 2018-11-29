@@ -1,0 +1,160 @@
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: linear-gradient( to left top, grey, rgb(173, 173, 173));
+    font-family: 'Bell Mt';
+}
+
+.content-div{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px; 
+    max-height: 100%;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 65px;
+    padding: 0px 20px;
+    display: flex;
+    background-color: rgb(88, 88, 88);
+    border-radius: 20px;
+    /*background: radial-gradient( rgb(87, 87, 87), darkgray);*/
+    align-items: flex-start;
+}
+
+#header-text{
+    padding: 0px 10px; 
+    margin: 15px 20px;
+    font-size: 25px; 
+    font-weight: bold;
+    text-align: left;
+}
+
+#image-div {
+    float: left;
+    text-align: left;
+    padding: 0 20px;
+    width: 70vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+#header-img{
+    height: 60px;
+    width: 60px;
+    padding-left: 0;
+    image-rendering: auto;
+    background: transparent;
+}
+
+#nav-div {
+    max-width: auto;
+    flex: 5%;
+    padding-top: 10px;
+    text-align: right;
+    padding-left: auto;
+}
+
+#nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-align: inherit;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: 2;    
+    font-weight: bold;
+}
+
+#form-div {
+    border: 0px;
+    border-color: darkgray;
+    border-style: ridge;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;    
+    align-items: center;
+    margin: 0 auto;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#email-label{
+    margin: 0px auto;   
+    font-size: 30px; 
+}
+
+#email{
+    max-width: 40vw;
+    padding: 5px;
+    margin: 15px;
+    font-size: 15px;
+    width: 80%;
+}
+
+#submit {
+    max-width: 60%;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#features{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.features-grid{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkgreen;
+    font-size: 50px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 60vw;
+    padding: 5px;
+    text-align: left;
+    font-size: 120%;
+}

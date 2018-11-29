@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="Survey.css" />
+  <script src="main.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <main id="main">
+    <div id="title-div">
+      <h1 id="title">FreeCodeCamp Developer Survey</h1>
+      <p id="description">
+        This is a general survey for Developers using FreeCodeCamp as a tool
+        to improve their skills.
+      </p>
+
+      <form id="survey-form" action="" method="GET">
+        <div id="personalInfo-div">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name" placeholder="First Name" required />
+          <label id="email-label" for="email">Email Address:</label>
+          <input type="email" id="email" placeholder="Please enter Email" required />
+          <label id="number-label" for="number">Age</label>
+          <input type="number" id="number" placeholder="Age" min="16" max="65" />
+          <label for=""></label> <br />
+          <label id="dropdown-label" for="dropdown">How many years have you been a developer:</label>
+          <select name="experience" id="dropdown">
+            <option value="0">0 - 1 Year</option>
+            <option value="1">1 - 2 Years</option>
+            <option value="2">2 - 3 Years</option>
+            <option value="3">3 - 4 Years</option>
+            <option value="4">4+ Years</option>
+          </select>
+
+          <fieldset id="satisfaction-fieldset">
+            <legend id="radio-legend">How satisfied are you with the course:</legend>
+            <label class="satisfy" for="completely"><input id="completely" type="radio" name="satisfaction" value="4" />Completely
+              Satisfied</label>
+            <label class="satisfy" for="partially"><input id="partially" type="radio" name="satisfaction" value="3" />Partially
+              Satisfied</label>
+            <label class="satisfy" for="satisfied"><input id="satisfied" type="radio" name="satisfaction" value="2" />Satisfied</label>
+            <label class="satisfy" for="unsatisfied"><input id="unsatisfied" type="radio" name="satisfaction" value="1" />Unsatisfied</label>
+            <label class="satisfy" for="completely-unsatisfied"><input id="completely-unsatisfied" type="radio" name="satisfaction"
+                value="0" />Compeletely Unsatisfied</label>
+          </fieldset>
+
+          <fieldset id="recomendation-fieldset">
+            <legend id="checkbox-legend">What did you find most helpful during your course:</legend>
+            <label class="recommend" for="info"><input id="info" type="checkbox" value="5" />Information Provided</label>
+            <label class="recommend" for="challenge"><input id="challenge" type="checkbox" value="4" />Challenges</label>
+            <label class="recommend" for="project"><input id="project" type="checkbox" value="3" />Projects</label>
+            <label class="recommend" for="tuts"><input id="tuts" type="checkbox" value="2" />Tutorials</label>
+            <label class="recommend" for="ref"><input id="ref" type="checkbox" value="1" />References</label>
+          </fieldset>
+
+          <label id="additional-label" for="additional">Do you have any extra comments:</label>
+          <textarea name="additional-info" id="additional" cols="40" rows="5"></textarea>
+
+          <input type="submit" id="submit" value="Submit Me">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
