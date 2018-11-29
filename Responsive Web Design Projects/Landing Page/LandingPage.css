@@ -30,7 +30,6 @@ html {
     display: flex;
     background-color: rgb(88, 88, 88);
     border-radius: 20px;
-    /*background: radial-gradient( rgb(87, 87, 87), darkgray);*/
     align-items: flex-start;
 }
 
