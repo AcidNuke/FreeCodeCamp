@@ -14,11 +14,10 @@
 
 
 <body class="body">
-    <div class="content-div">
+    <div class="content-div" id="about">
         <header id="header">
             <div id="image-div">
-                <img id="header-img" src="https://i.imgur.com/1bg4mst.png" alt="Landing page Header" height="50px"
-                    width="50px">
+                <img id="header-img" src="https://imgur.com/1bg4mst.png"></img>
                 <h3 id="header-text">Dev Solutions</h3>
             </div>
             <div id="nav-div">
@@ -38,15 +37,15 @@
             </div>
 
         </header>
-        <br>
-        <div id="form-div">
-            <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+        <br id="details">
+        <div id="form-div" >
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
                 <h3 id="email-label">Please supply us with your Email</h3>
-                <input id="email" type="email" placeholder="Enter Email" required>
+                <input id="email" type="email" placeholder="Enter Email" name="email" required >
                 <input id="submit" type="submit" value="Request Now">
             </form>
 
-            <section id="features">
+            <section id="features" >
                 <div class="features-grid">
                     <div class="icon">
                         <i class="fas fa-sync-alt"></i>
@@ -82,17 +81,71 @@
                 </div>
             </section>
         </div>
+        <iframe id="video" width="702/2" height="395/2" src="https://www.youtube.com/embed/ynUHE4OFg9E" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <video id="video" src=""></video>
+    </div>
+    <div class="detail-div">
+        <h2 id="pricing-header">Our Pricing Terms</h2>
+        <section id="pricing">
+            <div id="noob" class="pricing-item">
+                <div class="tier">
+                    <h2 class="pricing-header">The Noob</h2>
+                </div>
+                <h2>$ 5/Hour</h2>
+                <div class="info-div">
+                    <ul class="pricing-details">
+                        <li>I'm still learning.</li>
+                        <li>I don't take things too serious.</li>
+                        <li>Please give me a little more time.</li>
+                        <li>Don't mind the comments I leave, I need them as I'm still new.</li>
+                        <li>Let's say I'm the <strong><i>Cheapy</i></strong></li>
+                    </ul>
+                </div>
+                <div class="button-div">
+                    <button class="selection">Select</button>
+                </div>
+            </div>
+            <div id="newb" class="pricing-item">
+                <div class="tier">
+                    <h2 class="pricing-header">The Experienced Newb</h2>
+                </div>
+                <h2>$ 100/Hour</h2>
+                <div class="info-div">
+                    <ul class="pricing-details">
+                        <li>I'm Getting the hang of this.</li>
+                        <li>Be ready, I sure am, I think.</li>
+                        <li>Let's agree on the time needed first.</li>
+                        <li>My experience taught me i don't need as many comments, only comment functions.</li>
+                        <li>I used to be the <i>Cheapy</i>, but now I've grown to the <strong><i>Better</i></strong>
+                            option.</li>
+                    </ul>
+                </div>
+                <div class="button-div">
+                    <button class="selection">Select</button>
+                </div>
+            </div>
+            <div id="realdeal" class="pricing-item">
+                <div class="tier">
+                    <h2 class="pricing-header">The Real Deal</h2>
+                </div>
+                <h2>$ 500/Hour</h2>
+                <div class="info-div"> 
+                    <ul class="pricing-details">
+                        <li>Why compare me to <strong><i></i>The Weak</i></strong>.</li>
+                        <li>Serious is my Hacker Handle.</li>
+                        <li>DO NOT WAIST MY TIME...</li>
+                        <li>What do you mean Comment Here???</li>
+                        <li><strong><i>You better know what your doing...</i></strong></li>
+                    </ul>
+                </div>
+                <div class="button-div">
+                    <button class="selection">Select</button>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
-<footer>
-    <div>Icons made by
-        <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-            3.0 BY</a>
-    </div>
-</footer>
 
 </html>
 
@@ -108,7 +161,7 @@
 - [x] User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
 - [x] User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
 - [x] User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-- [x] User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+- [ ] User Story #11: Within the form, there is a submit input with a corresponding id="submit".
 - [ ] User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
 - [x] User Story #13: The navbar should always be at the top of the viewport.
 - [ ] User Story #14: My product landing page should have at least one media query.
